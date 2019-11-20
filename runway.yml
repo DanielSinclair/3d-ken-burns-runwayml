@@ -6,7 +6,7 @@ spec:
     cpu: False
     gpu: True
 build_steps:
-    - pip install runway-python cupy-cuda92 numpy torch torchvision moviepy opencv-python scipy
+    - pip install runway-python cupy-cuda92 numpy torch torchvision h5py moviepy opencv-python scipy
     - git clone https://github.com/sniklaus/3d-ken-burns.git
     - wget --timestamping --output-document=3d-ken-burns/models/disparity-estimation.pytorch http://content.sniklaus.com/kenburns/network-disparity.pytorch
     - wget --timestamping --output-document=3d-ken-burns/models/disparity-refinement.pytorch http://content.sniklaus.com/kenburns/network-refinement.pytorch
