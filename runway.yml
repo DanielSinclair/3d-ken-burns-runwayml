@@ -6,6 +6,6 @@ spec:
     cpu: False
     gpu: True
 build_steps:
-    - pip install runway-python cupy moviepy opencv-python numpy torch torchvision scipy
+    - pip install runway-python cupy-cuda92 numpy torch torchvision moviepy opencv-python scipy
     - git clone https://github.com/sniklaus/3d-ken-burns.git
     - bash ./3d-ken-burns/download.bash
