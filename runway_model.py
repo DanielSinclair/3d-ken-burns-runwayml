@@ -74,4 +74,8 @@ def process(model, inputs):
     return {'video': numpyResult}
 
 if __name__ == '__main__':
-    runway.run(host='0.0.0.0', port=9000)
+    try:
+        runway.run(host='0.0.0.0', port=9000)
+    except RunwayError as e:
+        print(e.code, e.message)
+        print(e.to_response())
