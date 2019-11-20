@@ -8,4 +8,5 @@ spec:
 build_steps:
     - pip install runway-python cupy-cuda92 numpy torch torchvision moviepy opencv-python scipy
     - git clone https://github.com/sniklaus/3d-ken-burns.git
-    - bash ./3d-ken-burns/download.bash
+    - cd 3d-ken-burns
+    - bash download.bash
